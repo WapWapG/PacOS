@@ -33,13 +33,18 @@ call print
 mov al, 'g'
 call print
 
-mov ah, 02h
-mov al, 0
-int 13h
+;Скан диска
 mov al, '.'
 call print
-pop [es::bx]
-jmp start_core
+mov ah, 02h
+mov dl, 80h
+mov cl, 2
+mov al, 1
+mov ax, 0
+mov es, ax
+mov bx, 0x8000
+int 13h
+jmp 0x8000
 print:
 mov ah, 0Ah
 mov cx, 1

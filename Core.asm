@@ -1,4 +1,5 @@
 section .text
+global start_core
 [bits 16]
 start_core:
 ;сброс позиции курсора
@@ -7,7 +8,7 @@ mov dh, 0
 mov dl, 2
 int 10h
 ;очистка первого символа для теста
-mov al, 0
+mov al, 'H'
 call print
 print:
 mov ah, 0Ah
@@ -23,3 +24,6 @@ add dl, 1
 mov ah, 02h
 int 10h
 ret
+
+times 510-($-$$) db 0
+dw 0AA55h
