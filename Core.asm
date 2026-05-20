@@ -1,13 +1,24 @@
 section .text
 global start_core
 [bits 16]
+[org 0x8000]
 start_core:
+mov ds, ax
+mov es, ax
+mov ss, ax
 ;сброс позиции курсора
-mov ah, 02h
-mov dh, 0
-mov dl, 2
-int 10h
+;mov ah, 02h
+;mov dh, 0
+;mov dl, 2
+;int 10h
 ;очистка первого символа для теста
+call update_cursor
+mov al, 'H'
+call print
+mov al, 'H'
+call print
+mov al, 'H'
+call print
 mov al, 'H'
 call print
 print:
@@ -25,5 +36,4 @@ mov ah, 02h
 int 10h
 ret
 
-times 510-($-$$) db 0
-dw 0AA55h
+times 512-($-$$) db 0

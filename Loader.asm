@@ -32,10 +32,10 @@ mov al, 'n'
 call print
 mov al, 'g'
 call print
-
+mov ah, 0
+mov cx, 0
+mov al, 0
 ;Скан диска
-mov al, '.'
-call print
 mov ah, 02h
 mov dl, 80h
 mov cl, 2
