@@ -8,4 +8,4 @@ I am trying make loader from scratch
 # Info
 My usb-flash leave this world so i cant test my code, and this code cant load to Qemu, i has now 2 bin files but cant test.
 
-If anyone load this code, the signal of load core is add "H" before "oading..."
+If anyone load this code, the signal of load core is add "H" after "Loading..."
