@@ -8,4 +8,4 @@ I am add bin files, you can load it using dd in linux, Loader.bin to seek=0 Core
 
 So now funcion print dont work on core so you can understand this work if the screen just work. I am replace init video to core.
 
-I am soon add script to linux to load my os to usb-flash
+I am and add a script to load bins to flash. Important Loadtousb need to was in one director with bins!
