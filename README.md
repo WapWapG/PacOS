@@ -9,3 +9,8 @@ I am add bin files, you can load it using dd in linux, Loader.bin to seek=0 Core
 So now funcion print dont work on core so you can understand this work if the screen just work. I am replace init video to core.
 
 I am and add a script to load bins to flash. Important Loadtousb need to was in one director with bins!
+
+# Script to load to usb flash
+This script work only on linux, i am dont know how to make this script for windows, there no dd, no normal sys call.
+
+Please lear yourself how load bins to flash on windows.
