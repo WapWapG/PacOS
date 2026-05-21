@@ -6,17 +6,16 @@ start_core:
 mov ds, ax
 mov es, ax
 mov ss, ax
+mov cx, ax
+;Инит видео
+mov ah, 00h
+int 10h
 ;сброс позиции курсора
-;mov ah, 02h
-;mov dh, 0
-;mov dl, 2
-;int 10h
-;очистка первого символа для теста
-call update_cursor
-mov al, 'H'
-call print
-mov al, 'H'
-call print
+mov ah, 02h
+mov dh, 0
+mov dl, 2
+int 10h
+;вывод текста
 mov al, 'H'
 call print
 mov al, 'H'
