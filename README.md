@@ -2,10 +2,10 @@
 Here i will write my os full on NASM
 Now i am dont know work my loader or no, but i think core work
 # What i am doing now?
-I am now write loader.asm, i am use like base Loader.asm from my other rep.
-
-I am trying make loader from scratch
+I am make core.asm, cant say anything other
 # Info
-My usb-flash leave this world so i cant test my code, and this code cant load to Qemu, i has now 2 bin files but cant test.
+I am add bin files, you can load it using dd in linux, Loader.bin to seek=0 Core.bin to seek=1 and my core will work.
 
-If anyone load this code, the signal of load core is add "H" after "Loading"
+So now funcion print dont work on core so you can understand this work if the screen just work. I am replace init video to core.
+
+I am soon add script to linux to load my os to usb-flash
