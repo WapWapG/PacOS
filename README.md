@@ -1,6 +1,8 @@
 # PacOS
 Here i will write my os full on NASM
 Now i am dont know work my loader or no, but i think core work
+
+Guys, if your pc on uefi and dont have csm module my os dont work on your pc. I am now write only bios version.
 # What i am doing now?
 I am make core.asm, cant say anything other
 # Info
