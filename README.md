@@ -16,4 +16,5 @@ I am and add a script to load bins to flash. Important Loadtousb need to was in 
 # Script to load to usb flash
 This script work only on linux, i am dont know how to make this script for windows, there no dd, no normal sys call.
 
-Please lear yourself how load bins to flash on windows.
+If you wanna load this os on windows use img, i am add img in repo.
+Or use Qemu-system
