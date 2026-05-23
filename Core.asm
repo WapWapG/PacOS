@@ -16,9 +16,19 @@ mov dh, 0
 mov dl, 2
 int 10h
 ;вывод текста
-mov al, 'H'
+mov al, 'W'
 call print
-mov al, 'H'
+mov al, 'e'
+call print
+mov al, 'l'
+call print
+mov al, 'c'
+call print
+mov al, 'o'
+call print
+mov al, 'm'
+call print
+mov al, 'e'
 call print
 print:
 mov ah, 0Ah
