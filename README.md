@@ -18,3 +18,10 @@ This script work only on linux, i am dont know how to make this script for windo
 
 If you wanna load this os on windows use img, i am add img in repo.
 Or use Qemu-system
+
+# Tech info
+This os write to x86, i am realise some function: print and update_cursor. 
+Now i am only write working loader so core dont have many function but i am work with this.
+
+If you wanna write a symbol just load to al a symbol in '' and write "call print", so core will load this symbol to screen. 
+Now update_cursor dont work and i dont know why, i fix this soon.
