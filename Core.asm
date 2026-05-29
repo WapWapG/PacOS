@@ -3,6 +3,7 @@ global start_core
 [bits 16]
 [org 0x8000]
 start_core:
+mov ax, 0
 mov ds, ax
 mov es, ax
 mov ss, ax
@@ -12,23 +13,11 @@ mov ah, 00h
 int 10h
 ;сброс позиции курсора
 mov ah, 02h
-mov dh, 0
+mov dh, 5
 mov dl, 2
 int 10h
 ;вывод текста
 mov al, 'W'
-call print
-mov al, 'e'
-call print
-mov al, 'l'
-call print
-mov al, 'c'
-call print
-mov al, 'o'
-call print
-mov al, 'm'
-call print
-mov al, 'e'
 call print
 print:
 mov ah, 0Ah
@@ -40,8 +29,9 @@ update_cursor:
 ;Обновление позиции курсора
 mov ah, 03h
 int 10h
-add dl, 1
 mov ah, 02h
+mov bh, 0
+add dl, 1
 int 10h
 ret
 

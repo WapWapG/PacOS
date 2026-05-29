@@ -13,14 +13,14 @@ mov ss, ax
 ;int 10h
 ;Скан диска
 mov ah, 02h
-mov al, 1
 mov dl, 80h
+mov al, 1
+mov dh, 0
+mov ch, 0
 mov cl, 2
 mov di, 0
 mov es, di
 mov bx, 0x8000
-mov dh, 0
-mov ch, 0
 int 13h
 jmp 0x8000
 ;print:
