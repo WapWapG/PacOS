@@ -4,6 +4,8 @@ Here i will write my os full on NASM
 Guys, if your pc on uefi and dont have csm module my os dont work on your pc. I am now write only bios version.
 
 On last update i add img of PacOS so you can load it to usb-flash.
+# Important
+I am realy dont know what with my code, its just dont work. Only if load raw bin to Qemu
 # What i am doing now?
 I am make core.asm, cant say anything other
 # Info
