@@ -7,17 +7,18 @@ mov ax, 0
 mov ds, ax
 mov es, ax
 mov ss, ax
-mov cx, ax
 ;Инит видео
 mov ah, 00h
 int 10h
 ;сброс позиции курсора
 mov ah, 02h
+mov bh, 0
 mov dh, 5
-mov dl, 2
+mov dl, 6
 int 10h
 ;вывод текста
-mov al, 'W'
+mov al, 87
+mov bh, 0
 call print
 print:
 mov ah, 0Ah
