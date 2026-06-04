@@ -9,8 +9,27 @@ mov ds, ax
 mov es, ax
 mov ss, ax
 ;Инит видео
-;mov ah, 00h
-;int 10h
+mov ah, 00h
+int 10h
+;Wrtie "Loading..."
+;Пишет "Loading..."
+;mov al, 'L'
+;call print
+;mov al, 'o'
+;call print
+;mov al, 'a'
+;call print
+;mov al, 'd'
+;call print
+;mov al, 'i'
+;call print
+;mov al, 'n'
+;call print
+;mov al, 'g'
+;call print
+;mov ah, 0
+;mov cx, 0
+;mov al, 0
 ;Скан диска
 mov ah, 02h
 mov dl, 80h
